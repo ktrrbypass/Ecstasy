@@ -1,0 +1,119 @@
+2025-07-04 20:19:45 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0xb48206400; archive(resolved)="<IDEArchive: 0xb4808aa00>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team(resolved)="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0xb48206400; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionProcessingPipelineContext: 0xb48205b00; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48406300; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48405400; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48405180; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48404f00; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48404c80; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48404a00; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48404780; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="<IDEProvisioningBasicTeam: 0xb4610d840; teamID='PHLP76WVTF', teamName='(null)'>">
+	<IDEDistributionContext: 0xb48404500; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="(null)">
+	<IDEDistributionContext: 0xb48404280; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="(null)">
+	<IDEDistributionContext: 0xb48404000; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="(null)">
+	<IDEDistributionContext: 0x104e1f990; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xb47a37a80>", team="(null)">
+	<IDEDistributionContext: 0x104dee750; archive = "<IDEArchive: 0xb4808aa00>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0xb48206400>
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2025-07-04 20:19:45 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app' '/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app'
+2025-07-04 20:19:45 +0000  >>> Copying /Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app 
+2025-07-04 20:19:45 +0000  copying file ./_CodeSignature/CodeResources ... 
+2025-07-04 20:19:45 +0000  2111 bytes for ./_CodeSignature/CodeResources
+2025-07-04 20:19:45 +0000  copying file ./ecstasy ... 
+2025-07-04 20:19:45 +0000  312800 bytes for ./ecstasy
+2025-07-04 20:19:45 +0000  copying file ./embedded.mobileprovision ... 
+2025-07-04 20:19:45 +0000  16351 bytes for ./embedded.mobileprovision
+2025-07-04 20:19:45 +0000  copying file ./Info.plist ... 
+2025-07-04 20:19:45 +0000  1279 bytes for ./Info.plist
+2025-07-04 20:19:45 +0000  copying file ./PkgInfo ... 
+2025-07-04 20:19:45 +0000  8 bytes for ./PkgInfo
+2025-07-04 20:19:45 +0000 [MT] /usr/bin/ditto exited with 0
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2025-07-04 20:19:45 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2025-07-04 20:19:45 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2025-07-04 20:19:45 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2025-07-04 20:19:45 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2025-07-04 20:19:45 +0000 [MT] Item /Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2025-07-04 20:19:45 +0000 [MT] Archs to thin for item /Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app are ["arm64e"]
+2025-07-04 20:19:45 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app/ecstasy' '-verify_arch' 'arm64e'
+2025-07-04 20:19:45 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2025-07-04 20:19:45 +0000 [MT] Skipping architecture thinning for item "ecstasy" because arch "arm64e" wasn't found
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionODRStep
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2025-07-04 20:19:45 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2025-07-04 20:19:45 +0000 [MT] Entitlements for <IDEDistributionItem: 0xb481254a0; bundleID='com.mildpeppercat.ecstasy', path='<DVTFilePath:0xb480cb780:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xb48125380; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xb4696adc0; name='Apple Development: jbmwall756@gmail.com (2AA26Q692N)', hash='7BDB31EC42871301C5AC2D06891C0B19454A6CCB', serialNumber='25161495FFD0C17097AC9AA57E385BFB', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-12-29 23:22:19 +0000''>', entitlements='{
+    "application-identifier" = "PHLP76WVTF.com.mildpeppercat.ecstasy";
+    "com.apple.developer.team-identifier" = PHLP76WVTF;
+    "get-task-allow" = 1;
+}', teamID='PHLP76WVTF', identifier='com.mildpeppercat.ecstasy', executablePath='<DVTFilePath:0xb48124b40:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app/ecstasy'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "PHLP76WVTF.com.mildpeppercat.ecstasy";
+    "com.apple.developer.team-identifier" = PHLP76WVTF;
+    "get-task-allow" = 1;
+}
+2025-07-04 20:19:45 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-07-04 20:19:45 +0000 [MT] Entitlements for <IDEDistributionItem: 0xb481254a0; bundleID='com.mildpeppercat.ecstasy', path='<DVTFilePath:0xb480cb780:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xb48125380; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xb4696a4c0; name='Apple Development: jbmwall756@gmail.com (2AA26Q692N)', hash='7BDB31EC42871301C5AC2D06891C0B19454A6CCB', serialNumber='25161495FFD0C17097AC9AA57E385BFB', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-12-29 23:22:19 +0000''>', entitlements='{
+    "application-identifier" = "PHLP76WVTF.com.mildpeppercat.ecstasy";
+    "com.apple.developer.team-identifier" = PHLP76WVTF;
+    "get-task-allow" = 1;
+}', teamID='PHLP76WVTF', identifier='com.mildpeppercat.ecstasy', executablePath='<DVTFilePath:0xb48124b40:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app/ecstasy'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "PHLP76WVTF.com.mildpeppercat.ecstasy";
+    "com.apple.developer.team-identifier" = PHLP76WVTF;
+    "get-task-allow" = 1;
+}
+2025-07-04 20:19:45 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0xb481254a0; bundleID='com.mildpeppercat.ecstasy', path='<DVTFilePath:0xb480cb780:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xb48125380; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xb4696a4c0; name='Apple Development: jbmwall756@gmail.com (2AA26Q692N)', hash='7BDB31EC42871301C5AC2D06891C0B19454A6CCB', serialNumber='25161495FFD0C17097AC9AA57E385BFB', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-12-29 23:22:19 +0000''>', entitlements='{
+    "application-identifier" = "PHLP76WVTF.com.mildpeppercat.ecstasy";
+    "com.apple.developer.team-identifier" = PHLP76WVTF;
+    "get-task-allow" = 1;
+}', teamID='PHLP76WVTF', identifier='com.mildpeppercat.ecstasy', executablePath='<DVTFilePath:0xb48124b40:'/Users/jameswallman/Ecstasy/ecstasy.xcarchive/Products/Applications/ecstasy.app/ecstasy'>', hardenedRuntime='0'>'> to: /var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/entitlements~~~pEIIhG
+2025-07-04 20:19:45 +0000 [MT] invoking codesign: <NSConcreteTask: 0xb463559a0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    7BDB31EC42871301C5AC2D06891C0B19454A6CCB,
+    "--entitlements",
+    "/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/entitlements~~~pEIIhG",
+    "--preserve-metadata=identifier,flags,runtime",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app"
+)'>
+2025-07-04 20:19:45 +0000 [MT] codesign output: /var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app: replacing existing signature
+/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app: signed app bundle with Mach-O thin (arm64) [com.mildpeppercat.ecstasy]
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2025-07-04 20:19:45 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-07-04 20:19:45 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2025-07-04 20:19:45 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root' '/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Packages/ecstasy.ipa'
+2025-07-04 20:19:45 +0000  >>> Copying /var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root 
+2025-07-04 20:19:45 +0000  copying file ./Payload/ecstasy.app/_CodeSignature/CodeResources ... 
+2025-07-04 20:19:45 +0000  2111 bytes for ./Payload/ecstasy.app/_CodeSignature/CodeResources
+2025-07-04 20:19:45 +0000  copying file ./Payload/ecstasy.app/ecstasy ... 
+2025-07-04 20:19:46 +0000  312800 bytes for ./Payload/ecstasy.app/ecstasy
+2025-07-04 20:19:46 +0000  copying file ./Payload/ecstasy.app/embedded.mobileprovision ... 
+2025-07-04 20:19:46 +0000  16351 bytes for ./Payload/ecstasy.app/embedded.mobileprovision
+2025-07-04 20:19:46 +0000  copying file ./Payload/ecstasy.app/Info.plist ... 
+2025-07-04 20:19:46 +0000  1279 bytes for ./Payload/ecstasy.app/Info.plist
+2025-07-04 20:19:46 +0000  copying file ./Payload/ecstasy.app/PkgInfo ... 
+2025-07-04 20:19:46 +0000  8 bytes for ./Payload/ecstasy.app/PkgInfo
+2025-07-04 20:19:46 +0000 [MT] /usr/bin/ditto exited with 0
+2025-07-04 20:19:46 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2025-07-04 20:19:46 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2025-07-04 20:19:46 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2025-07-04 20:19:46 +0000 [MT] IDEDistributionItem init <DVTFilePath:0xb48127900:'/var/folders/b1/fvbdq7_s0fb9420r0yqmd57r0000gn/T/XcodeDistPipeline.~~~nZKJw5/Root/Payload/ecstasy.app'>
+2025-07-04 20:19:46 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

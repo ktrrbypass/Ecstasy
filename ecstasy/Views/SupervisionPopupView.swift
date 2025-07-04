@@ -13,10 +13,8 @@ struct SupervisionPopupView: View {
     
     var body: some View {
         ZStack {
-            Color.black.opacity(0.4)
+            Color.black
                 .ignoresSafeArea()
-                .onTapGesture {
-                }
             
             VStack(spacing: 24) {
                 VStack(spacing: 16) {
@@ -87,6 +85,21 @@ struct SupervisionPopupView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
                         .background(Color.blue.opacity(0.1))
+                        .cornerRadius(12)
+                    }
+                    
+                    Button(action: {
+                        supervisionChecker.dontShowAgain()
+                    }) {
+                        HStack {
+                            Image(systemName: "xmark.circle")
+                            Text("Do Not Show Again")
+                        }
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(Color.secondary.opacity(0.1))
                         .cornerRadius(12)
                     }
                 }

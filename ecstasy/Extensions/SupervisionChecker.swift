@@ -10,9 +10,11 @@ import UIKit
 
 class SupervisionChecker: ObservableObject {
     @Published var isSupervised: Bool = false
+    @Published var shouldShowPopup: Bool = true
     
     init() {
         checkSupervisionStatus()
+        checkPopupPreference()
     }
     
     func checkSupervisionStatus() {
@@ -29,8 +31,17 @@ class SupervisionChecker: ObservableObject {
         }
     }
     
+    func checkPopupPreference() {
+        shouldShowPopup = !UserDefaults.standard.bool(forKey: "dontShowSupervisionPopup")
+    }
+    
     func markAsSupervised() {
         UserDefaults.standard.set(true, forKey: "isSupervised")
         isSupervised = true
+    }
+    
+    func dontShowAgain() {
+        UserDefaults.standard.set(true, forKey: "dontShowSupervisionPopup")
+        shouldShowPopup = false
     }
 } 

@@ -35,6 +35,15 @@ struct DevicePrefs: View {
                             .font(.caption)
                             .fontWeight(.medium)
                     }
+                    
+                    if !supervisionChecker.shouldShowPopup {
+                        Button(action: {
+                            UserDefaults.standard.removeObject(forKey: "dontShowSupervisionPopup")
+                            supervisionChecker.checkPopupPreference()
+                        }) {
+                            Label("Show Supervision Popup Again", systemImage: "eye")
+                        }
+                    }
                 }
             }
             .navigationTitle("Device Preferences")
@@ -43,9 +52,4 @@ struct DevicePrefs: View {
             SupervisionGuideView()
         }
     }
-}
-
-#Preview {
-    DevicePrefs()
-        .environmentObject(SupervisionChecker())
 }

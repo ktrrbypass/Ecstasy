@@ -16,7 +16,7 @@ struct ecstasyApp: App {
             ContentView()
                 .environmentObject(supervisionChecker)
                 .overlay {
-                    if !supervisionChecker.isSupervised {
+                    if supervisionChecker.shouldShowPopup {
                         SupervisionPopupView(supervisionChecker: supervisionChecker)
                     }
                 }
