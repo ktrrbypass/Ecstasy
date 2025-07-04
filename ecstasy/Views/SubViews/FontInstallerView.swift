@@ -108,20 +108,7 @@ struct FontInstallerView: View {
                 switch result {
                 case .success(let urls):
                     if let url = urls.first {
-                        // Check if the file has a valid font extension
-                        let fontExtensions = ["ttf", "otf", "ttc", "woff", "woff2"]
-                        let fileExtension = url.pathExtension.lowercased()
-                        
-                        if fontExtensions.contains(fileExtension) {
-                            selectedFontURL = url
-                            if fontName.isEmpty {
-                                fontName = url.deletingPathExtension().lastPathComponent
-                            }
-                        } else {
-                            alertTitle = "Invalid File Type"
-                            alertMessage = "Please select a valid font file (.ttf, .otf, .ttc, .woff, .woff2)"
-                            showAlert = true
-                        }
+                        handleFontFileSelection(url: url)
                     }
                 case .failure(let error):
                     alertTitle = "Error"
@@ -134,6 +121,40 @@ struct FontInstallerView: View {
             } message: {
                 Text(alertMessage)
             }
+        }
+    }
+    
+    private func handleFontFileSelection(url: URL) {
+        let fontExtensions = ["ttf", "otf", "ttc", "woff", "woff2"]
+        let fileExtension = url.pathExtension.lowercased()
+        
+        guard fontExtensions.contains(fileExtension) else {
+            alertTitle = "Invalid File Type"
+            alertMessage = "Please select a valid font file (.ttf, .otf, .ttc, .woff, .woff2)"
+            showAlert = true
+            return
+        }
+        
+        do {
+            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let fileName = url.lastPathComponent
+            let destinationURL = documentsPath.appendingPathComponent(fileName)
+            
+            if FileManager.default.fileExists(atPath: destinationURL.path) {
+                try FileManager.default.removeItem(at: destinationURL)
+            }
+            
+            try FileManager.default.copyItem(at: url, to: destinationURL)
+            selectedFontURL = destinationURL
+            
+            if fontName.isEmpty {
+                fontName = url.deletingPathExtension().lastPathComponent
+            }
+            
+        } catch {
+            alertTitle = "Error"
+            alertMessage = "Failed to copy font file: \(error.localizedDescription)"
+            showAlert = true
         }
     }
     
@@ -175,11 +196,9 @@ struct FontInstallerView: View {
     }
     
     private func createFontConfigurationProfile(fontURL: URL, fontName: String) throws -> Data {
-
         let fontData = try Data(contentsOf: fontURL)
         let base64FontData = fontData.base64EncodedString()
         
-
         let fontPayload: [String: Any] = [
             "PayloadType": "com.apple.font",
             "PayloadVersion": 1,
