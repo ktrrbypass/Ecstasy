@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var supervisionChecker: SupervisionChecker
     
     var body: some View {
         TabView {
@@ -58,6 +59,7 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(SupervisionChecker())
 }
 
 

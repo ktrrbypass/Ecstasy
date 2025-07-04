@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct ecstasyApp: App {
+    @StateObject private var supervisionChecker = SupervisionChecker()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(supervisionChecker)
+                .overlay {
+                    if !supervisionChecker.isSupervised {
+                        SupervisionPopupView(supervisionChecker: supervisionChecker)
+                    }
+                }
         }
     }
 }
